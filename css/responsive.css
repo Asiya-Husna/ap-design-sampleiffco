@@ -1,0 +1,112 @@
+@media screen and (max-width:1080px) {
+
+.header .navbar #myNavbar ul li{padding:0px 12px;}
+.service-sub-lst .service-lst span{font-size:26px;}
+.service-sub-lst .service-lst p{min-height:60px;}
+.vision-top-section .lft-comm-section h3{font-size:28px;}
+.lft-comm-section h3{font-size:28px;}
+.about-content{max-width:100%;}
+.vision-lst img{width:200px;}
+.vision-middle-section::after{top:41%; left:-15px;}
+.vision-lst p{max-width:215px;}
+.blog-rgt .card .card-top-cont p{font-size:18px;}
+.blog-rgt .card{padding:15px; margin-bottom:20px;}
+.ifa_card .card-top-cont{width:90%;padding:15px;}
+.about-content p{font-size:14px;}
+.about-content h2{font-size: 18px;}
+.about_us{padding:20px 0px;}
+.about-content{padding:20px 0px;}
+.best-gallery{padding:40px 0px;}
+section.blog-home.blog-list{padding-top:20px;}
+.vision-together{padding:40px 0px;}
+.footer-top-section{padding:40px 0px;}
+.blog{padding:40px 0px;}
+.services{padding:40px 0px;}
+}
+
+
+@media only screen and (min-width:1081px) and (max-width:1299px)
+{
+.about-content{max-width:650px;}
+}
+
+@media only screen and (min-width:320px) and (max-width:767px)
+{
+.foot-address { max-width: 100% !important;flex: 100% !important;width: 100%;margin-bottom: 5px;float: left;}
+.footer-content {display: block;}
+.foot-link {max-width: 100%;float: left;width: 49%;}
+.foot-help {max-width: 100%;width: 50%;float: left;}
+.foot-lst-col { max-width: 100%;width: 100%;float: left;margin-top: 23px;}
+.footer-top-section{padding:40px 0px;}
+.footer_terms_cond p, .footer_terms_cond a{line-height:28px;}
+.footer_terms_cond{padding-top:20px; padding-bottom:17px;}
+.vision-bottom-section{padding:30px 5px;}
+.vision-bottom-section h2{font-size:22px;line-height:27px;}
+.vision-bottom-section form .form-group{padding:3px 10px;}
+.cir{top:30%;}
+.triangle{top:33% !important;}
+.vision-bottom-section form .form-group input[type="email"]{font-size:14px;}
+.vision-bottom-section form .form-group input[type="submit"]{height:35px; font-size:15px;}
+.vision-middle-section{flex-direction:column;}
+.vision-middle-section::after{height:0px;}
+.vision-top-section .lft-comm-section h3{font-size:22px;}
+.lft-comm-section h5{font-size:16px;}
+.about-us-inner{flex-direction:column;}
+.about_us{padding:40px 0px;}
+.about-content { padding-bottom: 20px;padding-top:20px;}
+.service-rating .service-sub-lst{flex-wrap:wrap;justify-content:center;}
+.service-sub-lst .service-lst{width:145px; max-width:100%;}
+.services{padding:40px 0px;}
+.blog{padding:40px 0px;}
+section.blog-home.blog-list{padding-top:20px;}
+.blog .right-comm-section .read_more {padding: 10px 9px; font-size: 13px;}
+.blog-bottom-section{flex-direction:column;}
+.blog{height:auto !important;}
+.blog-bottom-section{align-items: center;}
+.blog-rgt .card{margin-bottom:25px;}
+.blog-bottom-section > div {width: 100% !important; max-width: 100%; align-items: center; display: flex; justify-content: center;}
+.blog-lft{margin-bottom:30px !important;}
+.about-us-inner > div {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+}
+.blog-rgt .card {
+   
+    margin: 0 auto; margin-bottom: 20px !important;
+  }
+  .footer_terms_cond p, .footer_terms_cond a{font-size: 14px !important;}
+  .blog .right-comm-section {
+    width: 160px;
+}
+.header .navbar #myNavbar ul li:first-child{padding-left: 15px !important;}
+.header .navbar #myNavbar ul.active{padding: 10px !important;}
+}
+
+@media only screen and (min-width:401px) and (max-width:767px)
+{
+    .about-us-inner img{width: 370px !important; max-width: 370px !important;}
+   
+}
+@media only screen and (min-width:320px) and (max-width:500px)
+{
+    .blog-rgt .card{width: 300px;}
+    .blog-home.blog-list .owl-controls .owl-buttons{top:-50px !important;}
+}
+
+@media only screen and (min-width:1081px) and (max-width:1400px)
+{
+.services{padding:40px 0px;}
+.blog{padding:40px 0px;}
+.about_us{padding:40px 0px;}
+.best-gallery{padding:40px 0px;}
+.vision-together{padding:30px 0px;}
+.footer-top-section{padding:30px 0px;}
+
+}
+
+@media only screen and (min-width:500px) and (max-width:1400px)
+{
+    .container{width:95% !important;}
+}

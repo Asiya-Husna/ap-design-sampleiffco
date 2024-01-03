@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFFCO</title>
+    
+     <!--Animated -->
+     <link rel="stylesheet" href="css/animation/style.css" type="text/css">
+     <link rel="stylesheet" href="css/animation/animations.css" type="text/css">
+     <!--[if lte IE 9]-->
+     <link href="css/animations-ie-fix.css" rel="stylesheet"  >
+     <!--[endif]-->
+     <!--Animated -->
+<!-- bootstrap link  -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css">
+     <!-- font link  -->
+     <link rel="stylesheet" href="./css/font.css" type="text/css">
+    <!-- styleSheet  -->
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link type="text/css" rel="stylesheet" href="./css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/responsive.css" type="text/css">
+    
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+      <!-- bootstrap link  -->
+    
+      <script src="./js/jquery.min.js"></script>
+      <script src="./js/bootstrap.min.js"></script>
+      <script src="./js/bootstrap.bundle.min.js"></script>
+     
+        
+     
+      <script>
+        $(document).ready(function(){
+          $("#button-fix").click(function() {
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+        });
+        });
+        </script> 
+          
+</head>
+<body> 
+  <section class="home-banner-page accom-inner-bg common-bg" >
+     
+    <div class="header">
+       <div class="container">
+          <nav class="navbar" id="natuical-navbar">
+             <div class="navbar-header">
+                <a class="navbar-brand" href="home.html"><img src="images/logo.png" alt="logo" /></a>
+             </div>
+             <div id="myNavbar">
+                <ul class="nav navbar-nav">
+                   <!-- <li class="mobile-close"  onclick="closeNav()" id="close-rest"><i class="fa fa-times" aria-hidden="true"></i></li> -->
+                   <li><a href="#home">Home</a></li>         
+                   <li><a href="#about">About Us</a></li> 
+                   <li><a href="#events">Events</a></li>
+                   <li class="active"><a href="#services">Services</a></li>
+                   <li><a href="#team">Team</a></li>
+                   <li><a href="#contact">Contacts</a></li>
+                   <li><a><img src="./images/gad-2.png" alt=""></a></li>
+                </ul>
+             </div>
+             <div id="menu-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </nav>
+       </div>
+    </div>
+    <div class="banner-content animatedParent animateOnce" data-sequence="500">
+       <h1 class="animated bounceInDown" data-id="1">Accommodation Management</h1>
+        <div class="breadcrumbs animated bounceInDown"  data-id="2">
+             <span>Home</span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="16" viewBox="0 0 11 16" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M3.80075 6.00924C3.97974 5.83025 4.26994 5.83025 4.44893 6.00924L8.11559 9.67591C8.20153 9.76185 8.24984 9.87845 8.24984 10C8.24984 10.1216 8.20153 10.2382 8.11559 10.3241L4.44893 13.9908C4.26994 14.1697 3.97974 14.1697 3.80075 13.9908C3.62176 13.8118 3.62176 13.5216 3.80075 13.3426L7.14333 10L3.80075 6.65743C3.62176 6.47843 3.62176 6.18823 3.80075 6.00924Z" fill="white" stroke="white" stroke-width="0.2"/>
+            </svg><label>Accommodation Management</label>
+        </div>
+       
+    </div>
+ </section>
+
+
+
+ <!--about us section-->
+ <section>
+   <div class="about_us common_us" id="about">
+      <div class="container">
+            <div class="about-us-inner animatedParent animateOnce " data-sequence='100'>
+              <div class="col-sm-3 about-mg animated bounceInLeft" data-id="1">
+                 <img src="./images/accom-lft-bg.png" alt="Services"/>
+              </div>
+              <div class="col-sm-9 animated bounceInRight" data-id="2">
+                <div class="about-content " data-id="1">
+                 <h5>Service</h5>
+                 <h2>Accommodation Management</h2>
+                 <p>Once an accommodation center is created, super user will assign the HR for a center and will be provided with a dashboard. 
+                  For an employee to be onboarded, an integration will be made from an internal system which will have employee details such as employee name, employee number, location. HR will be updating contact number, room number. Same will be applicable during leaving the accommodation too. Room status will be then updated as unoccupied.
+                  In case if the employee would like to switch the accommodation location, reason and necessity for the change should be captured and update have to be made. This update will be notified to the re-location requested HR and based on approval; employee will be relived from the current location to the preferred location.
+                  Periodically, accommodation ratings and reviews will be managed by the HR. For this, details will be updated the by GAD inspector based on their periodic visit. 
+                  Our assumption is the we will be providing a mobile app or a tablet-based app for the GAD inspector and will be able to capture the updates such as photos, reviews, complaints and other indications such as cleaning, safety, hygiene, security, Asset maintenance, sanitation level, etc. via this mobile app / tablet.
+                  This will be notified to the corresponding HR. Based on which maintenance and cleaning will be made and HR will update it with a response from their dashboard.
+                  At some cases, we assume that the same HR will be managing multiple business units.
+                  We assume that employee details such as their name, employee number will be obtained from the internal tool. Other details such as contact information, room number will be updated by the HR.
+                  We assume that Payment of the Accommodation will be manually updated by BU-HR with documents.
+                  </p>
+                 <a class="read_more">Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+      </div>
+   </div>
+ </section>
+ <!--about us section-->
+
+<!--vision-section-->
+<div class="vision-together">
+  <div class="container">
+   
+
+    <div class="vision-bottom-section">
+      <div class="cir">
+       <svg xmlns="http://www.w3.org/2000/svg" width="61" height="49" viewBox="0 0 61 49" fill="none">
+         <path d="M4.97881 0.675597C2.88048 4.31001 1.51855 8.32214 0.970777 12.4829C0.423002 16.6436 0.700115 20.8716 1.78629 24.9252C2.87247 28.9789 4.74643 32.7789 7.3012 36.1084C9.85596 39.4378 13.0415 42.2314 16.6759 44.3298C20.3103 46.4281 24.3224 47.79 28.4832 48.3378C32.644 48.8856 36.8719 48.6085 40.9255 47.5223C44.9792 46.4361 48.7792 44.5621 52.1087 42.0074C55.4381 39.4526 58.2317 36.2671 60.3301 32.6327L32.6544 16.6541L4.97881 0.675597Z" fill="#1A75FF"/>
+       </svg>
+      </div>
+      <div class="bottom">
+       <svg xmlns="http://www.w3.org/2000/svg" width="64" height="33" viewBox="0 0 64 33" fill="none">
+         <path d="M63.9857 31.9571C63.9763 27.7604 63.1404 23.6067 61.5257 19.7331C59.911 15.8595 57.5491 12.3419 54.575 9.38109C51.6008 6.42028 48.0726 4.07426 44.1918 2.47698C40.311 0.879704 36.1536 0.0624454 31.957 0.0718724C27.7603 0.0812993 23.6066 0.917227 19.733 2.53192C15.8594 4.14662 12.3418 6.50847 9.38099 9.48262C6.42018 12.4568 4.07416 15.985 2.47688 19.8658C0.879599 23.7466 0.0623423 27.904 0.0717696 32.1006L32.0287 32.0289L63.9857 31.9571Z" fill="#F2C94C"/>
+       </svg>
+      </div>
+      <div class="triangle">
+       <svg xmlns="http://www.w3.org/2000/svg" width="43" height="37" viewBox="0 0 43 37" fill="none">
+         <path d="M21.5 0L42.7176 36.75H0.282377L21.5 0Z" fill="white"/>
+       </svg>
+      </div>
+        <h2>Subscribe to our Newsletter</h2>
+        <form>
+          <div class="form-group">
+            <input type="email" value="" placeholder="Enter your email address.."/>
+            <input type="submit" value="Submit"/>
+          </div>
+        </form>
+    </div>
+  </div>
+</div>
+<!--vision-section-->
+ <!--footer section-->
+ <div class="footer">
+    <div class="footer-top-section">
+       <div class="container">
+             <div class="footer-content">
+                   <div class="col-sm-4 foot-address">
+                        <div class="lg-address">
+                           <a href="#"><img src="./images/logo.png" alt="logo"/></a>
+                           <p>Established in 1975, IFFCO is a multinational group based in the United Arab Emirates which manufactures and markets a well-integrated range of mass-market food products, related derivatives, intermediates, and services.</p>
+                        </div>
+                   </div>
+                   <div class="col-sm-2 foot-link">
+                      <div class="footer_lst">
+                        <h4>Links</h4>
+                        <ul>
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">About us</a></li>
+                          <li><a href="#">Services</a></li>
+                          <li><a href="#">Team</a></li>
+                          <li><a href="#">Events</a></li>
+                        </ul>
+                      </div>
+                   </div>
+                   <div class="col-sm-2 foot-help">
+                    <div class="footer_lst">
+                      <h4>Help</h4>
+                      <ul>
+                        <li><a href="#">Policies</a></li>
+                        <li><a href="#">Enquiry</a></li>
+                        <li><a href="#">Project GAD</a></li>
+                        <li id="contact"><a href="">Contact</a></li> 
+                      </ul>
+                    </div>
+                 </div>
+                 <div class="col-sm-3 foot-lst-col">
+                  <div class="footer_lst">
+                    <h4>Address</h4>
+                    <ul>
+                      <li><p>41 – 44 floor – Tiffany TowerCluster
+                        W, Jumeirah Lake Towers, 
+                        P.O.Box 3181, Dubai – U.A.E.</p></li>
+                      <li><a href="#">iffco@website.com</a></li>
+                      <li><a href="#">+971 4 2150000</a></li>
+                      
+                    </ul>
+                  </div>
+               </div>
+             </div>
+       </div>
+    </div>
+    <div class="footer_terms_cond">
+            <div class="container">
+                <p>Copyright ©2023 IFFCO | <a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a> | <a href="#">Disclaimer</a></p>
+            </div>
+    </div>
+ </div>
+ <!--footer section-->
+ <div class="button-fix" id="button-fix"><img src="images/bottomarw.png" width="35" height="36" alt=""/></div>
+ <!--Animated -->
+      <script src='js/animation/css3-animate-it.js'></script>
+      <script src='js/custom.js'></script>
+      <!--Animated -->
+    
+</body>
+</html>

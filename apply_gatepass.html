@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Apply Gatepass</title>
+    <!-- plugins:css -->
+    <link
+      rel="stylesheet"
+      href="gad/gatepass/hr/dashboard/assets/vendors/mdi/css/materialdesignicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="gad/gatepass/hr/dashboard/assets/vendors/css/vendor.bundle.base.css"
+    />
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="gad/gatepass/hr/dashboard/assets/css/style.css" />
+    <!-- <link rel="stylesheet" href="gad/gatepass/hr/dashboard/assets/css/mystyle.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+    <!-- End layout styles -->
+    <link
+      rel="shortcut icon"
+      href="gad/gatepass/hr/dashboard/assets/images/iffco_logo-mobile-.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/8c7950a932.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ck editor cdn -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/39.0.2/classic/ckeditor.js"></script>
+  </head>
+  <style>
+    .page-body-wrapper {
+      background-image: url("images/background.png") !important;
+      background-size: cover !important;
+    }
+    .btn-outline-primary:hover {
+      background: #e22d2c !important;
+      border: none !important;
+    }
+
+    .accordion-button:not(.collapsed) {
+      color: #e7f1ff;
+      background: #e22d2c !important;
+      -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+      box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+    }
+
+    .accord-menu {
+      font-size: 14px !important;
+      font-weight: 500 !important;
+    }
+
+    .accord-btn {
+      padding: 0.796rem;
+    }
+
+    .accordion-button,
+    .accordion-item {
+      border-radius: 7px !important;
+    }
+
+    .active-drop {
+      color: rgb(221, 82, 82) !important;
+    }
+
+    .box-shadow {
+      box-shadow: 1px 1px 8px #80808082 !important;
+    }
+  </style>
+
+  <body class="sidebar-fixed">
+    <div class="container-scroller">
+      <!-- partial:partials/_navbar.html -->
+
+      <!-- partial -->
+      <div
+        class="container-fluid page-body-wrapper w-100 content-wrapper justify-content-center"
+      >
+        <!-- partial:partials/_sidebar.html -->
+
+        <!-- partial -->
+        <div class="main-panel w-75">
+          <div class="">
+            <div class="row">
+              <div class="col-lg-12 grid-margin stretch-card p-0">
+                <div class="card rounded1 rounded rounded-4">
+                  <div class="card-body">
+                    <form class="form-sample py-3">
+                      <div class="text-center mb-3">
+                        <h3 class="mb-0">Application For Visitor Gatepass</h3>
+                      </div>
+                      <div
+                        class="form-pad border rounded rounded-3 p-4 box-shadow"
+                      >
+                        <div class="row">
+                          <h3
+                            class="page-title"
+                            style="
+                              font-weight: 600;
+                              color: black;
+                              padding-bottom: 20px;
+                            "
+                          >
+                            <span
+                              class="page-title-icon text-white mr-2"
+                              style="
+                                background: #e22d2c !important;
+                                margin-right: 10px;
+                              "
+                            >
+                              <i class="fa fa-file"></i>
+                            </span>
+                            Gatepass Details
+                          </h3>
+                          <div class="col-lg-3">
+                            <div class="form-group">
+                              <label for="exampleInputUsername1"
+                                >Reference GP No</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="exampleInputUsername1"
+                                placeholder="Enter Supplier code"
+                                value="E102"
+                                disabled
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-group">
+                              <label for="exampleInputEmail1"
+                                >Gatepass Date</label
+                              >
+                              <input
+                                type="date"
+                                class="form-control"
+                                id="exampleInputEmail1"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-group">
+                              <label for="exampleInputUsername1"
+                                >Select Port</label
+                              >
+                              <select name="" class="form-select w-100">
+                                <option value="">Select Port</option>
+                                <option value="">Khalid Port</option>
+                                <option value="">Khorfakkan Port</option>
+                                <option value="">Hamriyah Port</option>
+                                <option value="">Kalba Port</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-group">
+                              <label for="exampleInputEmail1"
+                                >Entry Type
+                              </label>
+                              <select
+                                name=""
+                                class="form-select w-100"
+                                onchange="entryType(this)"
+                              >
+                                <option value="0">Select Entry Type</option>
+                                <option value="1">Single Entry</option>
+                                <option value="2">Annual Entry</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-group">
+                              <label for="exampleInputUsername1"
+                                >Date
+                                <span class="d-none" id="periodLabel"
+                                  >(Period)</span
+                                ></label
+                              >
+                              <input
+                                type="date"
+                                class="form-control"
+                                id="exampleInputUsername1"
+                                placeholder="Enter Supplier code"
+                                value=""
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-3 date d-none" id="toDate">
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">To </label>
+                              <input
+                                type="date"
+                                class="form-control"
+                                id="exampleInputEmail1"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="form-pad mt-4 border rounded rounded-3 p-4 box-shadow"
+                      >
+                        <div class="row">
+                          <h3
+                            class="page-title"
+                            style="
+                              font-weight: 600;
+                              color: black;
+                              padding-bottom: 20px;
+                            "
+                          >
+                            <span
+                              class="page-title-icon text-white mr-2"
+                              style="
+                                background: #e22d2c !important;
+                                margin-right: 10px;
+                              "
+                            >
+                              <i class="fa fa-building"></i>
+                            </span>
+                            Business Unit Details
+                          </h3>
+                          <div class="col-lg-3">
+                            <div class="form-group">
+                              <label for="exampleInputPassword1"
+                                >IFFCO Business Unit</label
+                              >
+                              <select
+                                name=""
+                                class="form-select w-100"
+                                id="bu_select"
+                              >
+                                <option value="0">Select Business Unit</option>
+                                <option
+                                  value="Corporate Divisions - Oils & Fats"
+                                  >Corporate Divisions - Oils & Fats</option
+                                >
+                                <option value="Shama Food Industries LLC"
+                                  >Shama Food Industries LLC</option
+                                >
+                                <option
+                                  value="Intergulf Transportation Services LLC"
+                                  >Intergulf Transportation Services LLC</option
+                                >
+                                <option value="Emirates Refining Co Ltd"
+                                  >Emirates Refining Co Ltd</option
+                                >
+                                <option value="Tiffany Foods Ltd"
+                                  >Tiffany Foods Ltd</option
+                                >
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-group">
+                              <label for="exampleInputPassword1"
+                                >Department</label
+                              >
+                              <select name="" class="form-select w-100">
+                                <option value="">Select Department</option>
+                                <option value="">GAD Department</option>
+                                <option value="">IT</option>
+                                <option value="">Finance</option>
+                                <option value="">Visa Management</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-group">
+                              <label for="exampleInputConfirmPassword1"
+                                >To met with</label
+                              >
+                              <input
+                                type="text"
+                                placeholder="Name"
+                                class="form-control"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-group">
+                              <label for="exampleInputUsername1"
+                                >Category</label
+                              >
+                              <select name="" class="form-select w-100">
+                                <option value="">Select Category</option>
+                                <option value="">NOC</option>
+                                <option value="">Gatepass</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-group">
+                              <label for="exampleInputUsername1"
+                                >Purpose of visit</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="exampleInputUsername1"
+                                placeholder="Purpose of visit"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="form-pad mt-4 border rounded rounded-3 p-4 box-shadow"
+                      >
+                        <div class="row">
+                          <h3
+                            class="page-title"
+                            style="
+                              font-weight: 600;
+                              color: black;
+                              padding-bottom: 20px;
+                            "
+                          >
+                            <span
+                              class="page-title-icon text-white mr-2"
+                              style="
+                                background: #e22d2c !important;
+                                margin-right: 10px;
+                              "
+                            >
+                              <i class="fa fa-location"></i>
+                            </span>
+                            Visitor Details
+                          </h3>
+                          <div class="col-lg-3">
+                            <div class="form-group">
+                              <label class="">Visitor Type</label>
+                              <select name="" id="" class="form-select w-100">
+                                <option value="">Select Visitor Type</option>
+                                <option value="">Supplier</option>
+                                <option value="">Customer</option>
+                                <option value="">Guest</option>
+                                <option value="">Vehicle</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-group">
+                              <label for="visitor_name"
+                                >Visitor Name / Company</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="visitor_name"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-group">
+                              <label for="email_id">Email</label>
+                              <input
+                                type="email"
+                                class="form-control"
+                                id="email_id"
+                                placeholder="Email"
+                                oninput="handleChange(this)"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">Contact No</label>
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="exampleInputUsername1"
+                                placeholder=""
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">Country</label>
+                              <select name="" id="" class="form-select w-100">
+                                <option value="">Select Visitor Type</option>
+                                <option value="">India</option>
+                                <option value="">UAE</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 mb-1">
+                            <label for="">Address</label>
+                            <textarea
+                              class="w-100 form-control h-100"
+                              rows="2"
+                            ></textarea>
+                          </div>
+                          <div class="col-lg-12 mt-5">
+                            <table class="table text-center" id="visitTable">
+                              <thead>
+                                <tr>
+                                  <th class="fw-bold">Sno</th>
+                                  <th class="fw-bold">Name of Visitor</th>
+                                  <th class="fw-bold">Nationality</th>
+                                  <th class="fw-bold">
+                                    Passport No / Emirates No
+                                  </th>
+                                  <th class="fw-bold">Add / Remove</th>
+                                </tr>
+                              </thead>
+                              <tbody id="add_visitor_detail">
+                                <tr>
+                                  <td>1</td>
+                                  <td>
+                                    <input
+                                      type="text"
+                                      class="border border-secondary p-2 rounded rounded-2"
+                                    />
+                                  </td>
+                                  <td>
+                                    <input
+                                      type="text"
+                                      class="border border-secondary p-2 rounded rounded-2"
+                                    />
+                                  </td>
+                                  <td>
+                                    <input
+                                      type="text"
+                                      class="border border-secondary p-2 rounded rounded-2"
+                                    />
+                                  </td>
+                                  <td class="">
+                                    <button
+                                      type="button"
+                                      class="border bg-white p-2 fs-5 add_btn"
+                                      onclick="addRows()"
+                                    >
+                                      <i class="fa fa-plus"></i>
+                                    </button>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="form-pad mt-4 border rounded rounded-3 p-4 box-shadow"
+                      >
+                        <h3
+                          class="page-title"
+                          style="
+                            font-weight: 600;
+                            color: black;
+                            padding-bottom: 20px;
+                          "
+                        >
+                          <span
+                            class="page-title-icon text-white mr-2"
+                            style="
+                              background: #e22d2c !important;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i class="mdi mdi-briefcase"></i>
+                          </span>
+                          SUPPORT DOCUMENTS
+                        </h3>
+
+                        <div class="row">
+                          <div class="col-lg-3">
+                            <div class="form-group">
+                              <input
+                                type="file"
+                                name="img[]"
+                                class="file-upload-default"
+                                id="file-input"
+                              />
+                              <div class="input-group col-xs-12">
+                                <input
+                                  type="text"
+                                  class="form-control file-upload-info"
+                                  disabled=""
+                                  placeholder="Upload File"
+                                />
+                                <span class="input-group-append">
+                                  <button
+                                    class="file-upload-browse btn btn-danger rounded-0 rounded-end"
+                                    style="
+                                      height: 40px !important;
+                                      width: 60px !important;
+                                      padding: 0px !important;
+                                      background: #e22d2c !important;
+                                    "
+                                    type="button"
+                                    onclick="uploadFile()"
+                                  >
+                                    Upload
+                                  </button>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-group">
+                              <input
+                                type="file"
+                                name="img[]"
+                                class="file-upload-default"
+                                id="file-input"
+                              />
+                              <div class="input-group col-xs-12">
+                                <input
+                                  type="text"
+                                  class="form-control file-upload-info"
+                                  disabled=""
+                                  placeholder="Upload File"
+                                />
+                                <span class="input-group-append">
+                                  <button
+                                    class="file-upload-browse btn btn-danger rounded-0 rounded-end"
+                                    style="
+                                      height: 40px !important;
+                                      width: 60px !important;
+                                      padding: 0px !important;
+                                      background: #e22d2c !important;
+                                    "
+                                    type="button"
+                                    onclick="uploadFile()"
+                                  >
+                                    Upload
+                                  </button>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-group">
+                              <input
+                                type="file"
+                                name="img[]"
+                                class="file-upload-default"
+                                id="file-input"
+                              />
+                              <div class="input-group col-xs-12">
+                                <input
+                                  type="text"
+                                  class="form-control file-upload-info"
+                                  disabled=""
+                                  placeholder="Upload File"
+                                />
+                                <span class="input-group-append">
+                                  <button
+                                    class="file-upload-browse btn btn-danger rounded-0 rounded-end"
+                                    style="
+                                      height: 40px !important;
+                                      width: 60px !important;
+                                      padding: 0px !important;
+                                      background: #e22d2c !important;
+                                    "
+                                    type="button"
+                                    onclick="uploadFile()"
+                                  >
+                                    Upload
+                                  </button>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-group">
+                              <input
+                                type="file"
+                                name="img[]"
+                                class="file-upload-default"
+                                id="file-input"
+                              />
+                              <div class="input-group col-xs-12">
+                                <input
+                                  type="text"
+                                  class="form-control file-upload-info"
+                                  disabled=""
+                                  placeholder="Upload File"
+                                />
+                                <span class="input-group-append">
+                                  <button
+                                    class="file-upload-browse btn btn-danger rounded-0 rounded-end"
+                                    style="
+                                      height: 40px !important;
+                                      width: 60px !important;
+                                      padding: 0px !important;
+                                      background: #e22d2c !important;
+                                    "
+                                    type="button"
+                                    onclick="uploadFile()"
+                                  >
+                                    Upload
+                                  </button>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mt-4">
+                        <div class="text-center">
+                          <button
+                            type="button"
+                            class="btn btn-primary btn-fw clr"
+                            onclick="formSubmit()"
+                            style="
+                              border: 1px solid #e22d2c;
+                              background: #e22d2c !important;
+                              color: #fff !important;
+                            "
+                            data-bs-toggle="modal"
+                            data-bs-target="#applyGatepass"
+                            id="emailForm"
+                          >
+                            Submit
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:partials/_footer.html -->
+
+          <!-- partial -->
+        </div>
+
+        <!-- main-panel ends -->
+      </div>
+    </div>
+
+    <!-- Button trigger modal -->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="applyGatepass"
+      tabindex="-1"
+      aria-labelledby="applyGatepassLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="applyGatepassLabel">Success</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="">
+              <p>
+                Your request for a Gatepass with <code id="bu_name"></code> has
+                submitted! please note your gatepass reference :
+                <b>GP-000123</b>.
+              </p>
+              <p>
+                You will receive an email on acceptance or rejection within 24
+                hours.
+              </p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+            <a href="" class="btn btn-danger">Ok</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <script>
+      emailjs.init("0kipjpN1wpYdzq_Jc");
+      function mailHandler(email,visit_name) {
+        // Get form data
+        const toEmail = email;
+        const subject = "Gate Pass Application Status";
+        const message = `Dear `+visit_name+`,\n
+        We have received your Gate Pass application and it is currently under review.\n
+        You will receive an email within 24 hours confirming the status of your application, whether it has been accepted or rejected.\n
+        Gate Pass Reference Number: GP-000123\n
+        For urgent inquiries, please contact IFFCO HR at hr@iffco.com.\n
+        Thank you for your patience.\n
+        Best regards,\n
+        IFFCO`;
+        const name = "user";
+        emailjs
+        .send("service_yiyyvkp", "template_gmwq27m", {
+            to_email: toEmail,
+            subject: subject,
+            message: message,
+            from_name: name,
+        }).then(
+          function (response) {
+            console.log("Email sent successfully:", response);
+            // alert("Email sent successfully!");
+          },
+          function (error) {
+            console.error("Email sending failed:", error);
+            // alert("Email sending failed. Please try again later.");
+          }
+        );
+      }
+
+      // document
+      //   .getElementById("emailForm")
+      //   .addEventListener("submit", function (event) {
+      //     event.preventDefault();
+
+      //     // Send the email
+
+      //     // Clear form fields
+      //     document.getElementById("toEmail").value = "";
+      //     document.getElementById("subject").value = "";
+      //     document.getElementById("message").value = "";
+      //   });
+      let email = "";
+      function handleChange(e) {
+        email = e.value;
+      }
+
+      function formSubmit() {
+        let bu = document.getElementById("bu_select").value;
+        let visitor_name = document.getElementById("visitor_name").value;
+
+        if (bu != "0") {
+          mailHandler(email,visitor_name);
+          document.getElementById("bu_name").innerText = bu;
+        } else {
+          alert("Please Select Business Unit");
+        }
+      }
+
+      function entryType(e) {
+        if (e.value == 2) {
+          document.getElementById("toDate").classList.toggle("d-none");
+          document.getElementById("periodLabel").classList.toggle("d-none");
+        } else {
+          let a = document
+            .getElementById("toDate")
+            .classList.contains("d-none");
+          if (a == false) {
+            document.getElementById("toDate").classList.add("d-none");
+            document.getElementById("periodLabel").classList.add("d-none");
+          }
+        }
+      }
+
+      function uploadFile() {
+        document.getElementById("file-input").click();
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        var notificationDropdown = document.getElementById(
+          "notificationDropdown"
+        );
+        var notificationMenu = document.querySelector(
+          ".navbar-dropdown.preview-list"
+        );
+
+        notificationDropdown.addEventListener("click", function (e) {
+          e.preventDefault();
+          if (notificationMenu.classList.contains("show")) {
+            notificationMenu.classList.remove("show");
+          } else {
+            notificationMenu.classList.add("show");
+          }
+        });
+
+        // Close the notification dropdown when clicking outside of it
+        document.addEventListener("click", function (e) {
+          if (
+            !notificationDropdown.contains(e.target) &&
+            !notificationMenu.contains(e.target)
+          ) {
+            notificationMenu.classList.remove("show");
+          }
+        });
+      });
+    </script>
+    <script src="gad/gatepass/hr/dashboard/assets/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="gad/gatepass/hr/dashboard/assets/js/off-canvas.js"></script>
+    <script src="gad/gatepass/hr/dashboard/assets/js/hoverable-collapse.js"></script>
+    <script src="gad/gatepass/hr/dashboard/assets/js/misc.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <!-- End custom js for this page -->
+    <script>
+      // Initialize EmailJS with your user ID
+
+      // Add event listener to the form
+      document
+        .getElementById("emailForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          // Get form data
+          const toEmail = "shadabpc@yopmail.com";
+          const subject = "testing";
+          const message = "its working Fine";
+
+          // Send the email
+          emailjs
+            .send("service_your_service_id", "template_your_template_id", {
+              to_email: toEmail,
+              subject: subject,
+              message: message,
+            })
+            .then(
+              function (response) {
+                console.log("Email sent successfully:", response);
+                alert("Email sent successfully!");
+              },
+              function (error) {
+                console.error("Email sending failed:", error);
+                alert("Email sending failed. Please try again later.");
+              }
+            );
+
+          // Clear form fields
+          document.getElementById("toEmail").value = "";
+          document.getElementById("subject").value = "";
+          document.getElementById("message").value = "";
+        });
+    </script>
+
+    <script>
+      // Logout fOR Pop
+      // let add_btn = document.querySelectorAll('.add_btn');
+      // let delete_btn = document.querySelector('.delete_btn');
+      function addRows() {
+        var table = document.getElementById("visitTable"); //to get the row count
+        var tbodyRowCount = table.tBodies[0].rows.length + 1; //to get the row count
+        var rows = document.createElement("tr");
+        if (tbodyRowCount <= 4) {
+          rows.innerHTML =
+            `
+            <td>` +
+            tbodyRowCount +
+            `</td>
+            <td><input type="text" class="border border-secondary p-2 rounded rounded-2"></td>
+            <td><input type="text" class="border border-secondary p-2 rounded rounded-2"></td>
+            <td><input type="text" class="border border-secondary p-2 rounded rounded-2"></td>
+            <td class="">
+              <button type="button" class="border bg-white p-2 fs-5 add_btn" onclick="addRows()"><i
+                  class="fa fa-plus"></i></button>
+              <button type="button" class="border bg-white p-2 fs-5 delete_btn text-danger" onclick="removeRows(this)"><i class="fa-regular fa-trash-can"></i></button>
+            </td>
+          `;
+          document.getElementById("add_visitor_detail").appendChild(rows);
+        }
+      }
+
+      function removeRows(e) {
+        var i = e.parentNode.parentNode.rowIndex;
+        document.getElementById("visitTable").deleteRow(i);
+      }
+
+      const btn = document.getElementById("submit-btn");
+
+      document
+        .getElementById("form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          btn.value = "Sending...";
+
+          const serviceID = "default_service";
+          const templateID = "template_ixw3vqh";
+
+          emailjs.sendForm(serviceID, templateID, this).then(
+            () => {
+              btn.value = "Send Email";
+              alert("Sent!");
+              document.querySelector("#to_name").value = "";
+              document.querySelector("#from_name").value = "";
+              document.querySelector("#message").value = "";
+              document.querySelector("#reply_to").value = "";
+            },
+            (err) => {
+              btn.value = "Send Email";
+              alert(JSON.stringify(err));
+            }
+          );
+        });
+    </script>
+  </body>
+</html>

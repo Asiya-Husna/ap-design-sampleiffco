@@ -1,0 +1,223 @@
+.main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: 1s;
+  min-height: 100vh;
+}
+
+.box-image {
+  position: relative;
+  background-image: url("images/infographic_1130\ 1.png");
+  height: 600px;
+  width: 600px;
+  background-size: 100% 100%;
+  margin: auto;
+}
+
+.inside-image-module {
+  position: relative;
+  background-image: url("images/3412737.jpg");
+  height: 500px;
+  width: 500px;
+  background-size: 100% 100%;
+}
+
+.tawjeeh-section {
+  position: absolute;
+  height: 20%;
+  /* background: red; */
+  top: 26%;
+  width: 20%;
+  left: 15%;
+}
+
+.gatepass-section {
+  position: absolute;
+  height: 20%;
+  /* background: red; */
+  top: 11%;
+  width: 20%;
+  left: 40%;
+}
+
+.umrah-section {
+  position: absolute;
+  height: 20%;
+  /* background: green; */
+  top: 26%;
+  width: 20%;
+  left: 65%;
+}
+
+.accomodations-section {
+  height: 20%;
+  position: absolute;
+  /* background: grey; */
+  top: 54%;
+  width: 20%;
+  left: 65%;
+}
+
+.trade-section {
+  position: absolute;
+  height: 20%;
+  /* background: cornflowerblue; */
+  top: 68%;
+  width: 20%;
+  left: 40%;
+}
+
+/* login page */
+
+.tawjeeh-page {
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  max-width: 460px;
+  margin: 0 auto 100px;
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+}
+.form input {
+  outline: 0;
+  background: "#f2f2f2v";
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 7px;
+  font-size: 0.9rem;
+}
+
+h6 {
+  text-align: center;
+}
+.first-half {
+  padding: 1% 0% 0 0;
+  width: 100%;
+  min-height: 100vh;
+}
+.second-half {
+  padding: 6% 0% 0 0;
+
+  display: none;
+  width: 50%;
+}
+
+.register-form {
+  text-align: left;
+}
+.register-form input {
+  border: 1px solid rgba(0, 0, 0, 0.295);
+  border-radius: 5px;
+}
+
+.submit-btn {
+  background: #e16327;
+  width: 100%;
+  color: white;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px;
+  border: none;
+}
+.submit-btn:hover {
+  background: #e16327;
+  color: white;
+}
+
+select {
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.295);
+  border-radius: 5px;
+}
+
+.hide-div {
+  display: none;
+}
+
+.gatePass-page .submit-btn {
+  background: #4c0828;
+}
+
+.umrah-page .submit-btn {
+  background: #3c8303;
+}
+.accomodations-page .submit-btn {
+  background: #779997;
+}
+label {
+  margin-bottom: 5px;
+}
+
+.trade-page .submit-btn {
+  background: #183943;
+}
+
+.register-form h3,
+.register-form h4 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.message {
+  margin-top: 1rem;
+  text-align: center;
+  color: red;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.li {
+  cursor: pointer;
+}
+
+.first-half-headline {
+  text-align: center;
+}
+
+.tawjeeh-page h4 {
+  color: #e16327;
+}
+.gatePass-page h4 {
+  color: #4c0828;
+}
+.umrah-page h4 {
+  color: #3c8303;
+}
+.accomodations-page h4 {
+  color: #779997;
+}
+.trade-page h4 {
+  color: #183943;
+}
+
+
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+  .box-image {
+    height: 450px;
+    width: 450px;
+  }
+  .first-half {
+    width: 100% !important;
+    min-height: auto;
+  }
+  .second-half {
+    width: 100%;
+  }
+  .form {
+    padding-top: 0px;
+    margin: 0;
+  }
+}

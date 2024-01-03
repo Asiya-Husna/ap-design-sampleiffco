@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Review Gatepass</title>
+    <!-- plugins:css -->
+    <link
+      rel="stylesheet"
+      href="gad/gatepass/hr/dashboard/assets/vendors/mdi/css/materialdesignicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="gad/gatepass/hr/dashboard/assets/vendors/css/vendor.bundle.base.css"
+    />
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="gad/gatepass/hr/dashboard/assets/css/style.css" />
+    <!-- <link rel="stylesheet" href="gad/gatepass/hr/dashboard/assets/css/mystyle.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+    <!-- End layout styles -->
+    <link
+      rel="shortcut icon"
+      href="gad/gatepass/hr/dashboard/assets/images/iffco_logo-mobile-.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/8c7950a932.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ck editor cdn -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/39.0.2/classic/ckeditor.js"></script>
+  </head>
+  <style>
+    .page-body-wrapper {
+      background-image: url("images/background.png") !important;
+      background-size: cover !important;
+    }
+    .btn-outline-primary:hover {
+      background: #e22d2c !important;
+      border: none !important;
+    }
+
+    .accordion-button:not(.collapsed) {
+      color: #e7f1ff;
+      background: #e22d2c !important;
+      -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+      box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+    }
+
+    .accord-menu {
+      font-size: 14px !important;
+      font-weight: 500 !important;
+    }
+
+    .accord-btn {
+      padding: 0.796rem;
+    }
+
+    .accordion-button,
+    .accordion-item {
+      border-radius: 7px !important;
+    }
+
+    .active-drop {
+      color: rgb(221, 82, 82) !important;
+    }
+    .box-shadow {
+      box-shadow: 1px 1px 8px #80808082 !important;
+    }
+  </style>
+
+  <body class="sidebar-fixed">
+    <div class="container-scroller">
+      <!-- partial:partials/_navbar.html -->
+
+      <!-- partial -->
+      <div
+        class="container-fluid page-body-wrapper w-100 content-wrapper justify-content-center"
+      >
+        <!-- partial:partials/_sidebar.html -->
+
+        <!-- partial -->
+        <div class="main-panel w-75">
+          <div class="">
+            <div class="row">
+              <div class="col-lg-12 grid-margin stretch-card p-0">
+                <div class="card rounded1 rounded rounded-4">
+                  <div class="card-body">
+                    <form class="form-sample py-3">
+                      <div class="text-center mb-3">
+                        <h3 class="mb-0">Review Application Gatepass</h3>
+                      </div>
+                      <div
+                        class="form-pad box-shadow border rounded rounded-3 p-4"
+                      >
+                        <div class="row">
+                          <h3
+                            class="page-title"
+                            style="
+                              font-weight: 600;
+                              color: black;
+                              padding-bottom: 20px;
+                            "
+                          >
+                            <span
+                              class="page-title-icon text-white mr-2"
+                              style="
+                                background: #e22d2c !important;
+                                margin-right: 10px;
+                              "
+                            >
+                              <i class="fa fa-file"></i>
+                            </span>
+                            Gatepass Details
+                          </h3>
+                          <div class="col-lg-3">
+                            <div class="form-group">
+                              <label for="exampleInputUsername1"
+                                >Reference GP No</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="exampleInputUsername1"
+                                placeholder="Enter Supplier code"
+                                value="E102"
+                                disabled
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-group">
+                              <label for="gatepass_date">Gatepass Date</label>
+                              <input
+                                type="date"
+                                class="form-control"
+                                id="gatepass_date"
+                                value="2023-09-26"
+                                disabled
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-group">
+                              <label for="exampleInputUsername1"
+                                >Select Port</label
+                              >
+                              <select
+                                name=""
+                                class="form-select w-100"
+                                disabled
+                              >
+                                <option value="">Select Port</option>
+                                <option value="" selected>Khalid Port</option>
+                                <option value="">Khorfakkan Port</option>
+                                <option value="">Hamriyah Port</option>
+                                <option value="">Kalba Port</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-group">
+                              <label for="exampleInputEmail1"
+                                >Entry Type
+                              </label>
+                              <select
+                                name=""
+                                class="form-select w-100"
+                                disabled
+                              >
+                                <option value="">Annual Entry</option>
+                                <option value="">Single Entry</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-group">
+                              <label for="exampleInputUsername1"
+                                >Date (Period)
+                              </label>
+                              <input
+                                type="date"
+                                class="form-control"
+                                id="exampleInputUsername1"
+                                placeholder="Enter Supplier code"
+                                value="2023-09-26"
+                                disabled
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">To </label>
+                              <input
+                                type="date"
+                                class="form-control"
+                                id="exampleInputEmail1"
+                                value="2023-09-30"
+                                disabled
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="form-pad box-shadow border rounded rounded-3 p-4 mt-4"
+                      >
+                        <div class="row">
+                          <h3
+                            class="page-title"
+                            style="
+                              font-weight: 600;
+                              color: black;
+                              padding-bottom: 20px;
+                            "
+                          >
+                            <span
+                              class="page-title-icon text-white mr-2"
+                              style="
+                                background: #e22d2c !important;
+                                margin-right: 10px;
+                              "
+                            >
+                              <i class="fa fa-building"></i>
+                            </span>
+                            Business Unit Details
+                          </h3>
+                          <div class="col-lg-3">
+                            <div class="form-group">
+                              <label for="exampleInputPassword1"
+                                >IFFCO Business Unit</label
+                              >
+                              <select
+                                name=""
+                                class="form-select w-100"
+                                disabled
+                              >
+                                <option value="">Select Business Unit</option>
+                                <option value=""
+                                  >Corporate Divisions - Oils & Fats</option
+                                >
+                                <option value="" selected
+                                  >Shama Food Industries LLC</option
+                                >
+                                <option value=""
+                                  >Intergulf Transportation Services LLC</option
+                                >
+                                <option value=""
+                                  >Emirates Refining Co Ltd</option
+                                >
+                                <option value="">Tiffany Foods Ltd</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-group">
+                              <label for="exampleInputPassword1"
+                                >Department</label
+                              >
+                              <select
+                                name=""
+                                class="form-select w-100"
+                                disabled
+                              >
+                                <option value="">Select Department</option>
+                                <option value="" selected
+                                  >GAD Department</option
+                                >
+                                <option value="">IT</option>
+                                <option value="">Finance</option>
+                                <option value="">Visa Management</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-group">
+                              <label for="exampleInputConfirmPassword1"
+                                >To met with</label
+                              >
+                              <input
+                                type="text"
+                                placeholder="Name"
+                                class="form-control"
+                                value="John Doe"
+                                disabled
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-group">
+                              <label for="exampleInputUsername1"
+                                >Category</label
+                              >
+                              <select
+                                name=""
+                                class="form-select w-100"
+                                disabled
+                              >
+                                <option value="">Select Category</option>
+                                <option value="" selected>NOC</option>
+                                <option value="">Gatepass</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-group">
+                              <label for="purpose_of_visit"
+                                >Purpose of visit</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="purpose_of_visit"
+                                placeholder="Purpose of visit"
+                                value="Casual meet"
+                                disabled
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="form-pad box-shadow border rounded rounded-3 p-4 mt-4"
+                      >
+                        <div class="row">
+                          <h3
+                            class="page-title"
+                            style="
+                              font-weight: 600;
+                              color: black;
+                              padding-bottom: 20px;
+                            "
+                          >
+                            <span
+                              class="page-title-icon text-white mr-2"
+                              style="
+                                background: #e22d2c !important;
+                                margin-right: 10px;
+                              "
+                            >
+                              <i class="fa fa-location"></i>
+                            </span>
+                            Visitor Details
+                          </h3>
+                          <div class="col-lg-3">
+                            <div class="form-group">
+                              <label class="">Visitor Type</label>
+                              <select
+                                name=""
+                                id=""
+                                class="form-select w-100"
+                                disabled
+                              >
+                                <option value="">Select Visitor Type</option>
+                                <option value="">Supplier</option>
+                                <option value="">Customer</option>
+                                <option value="" selected>Guest</option>
+                                <option value="">Vehicle</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-group">
+                              <label for="">Visitor Name / Company</label>
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="visit_name"
+                                value="Tiffany Foods Ltd"
+                                disabled
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-group">
+                              <label for="">Email</label>
+                              <input
+                                type="email"
+                                class="form-control"
+                                id="email"
+                                placeholder="Email"
+                                value="colan@yopmail.com"
+                                disabled
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">Contact No</label>
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="exampleInputUsername1"
+                                placeholder=""
+                                value="9876543210"
+                                disabled
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">Country</label>
+                              <select
+                                name=""
+                                id=""
+                                class="form-select w-100"
+                                disabled
+                              >
+                                <option value="">Select Visitor Type</option>
+                                <option value="">India</option>
+                                <option value="" selected>UAE</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 mb-1">
+                            <label for="">Address</label>
+                            <textarea
+                              class="w-100 form-control h-100"
+                              rows="2"
+                              disabled
+                            >
+Tiffany Foods Ltd, Dubai</textarea
+                            >
+                          </div>
+                          <div class="col-lg-12 mt-5">
+                            <table class="table text-center" id="visitTable">
+                              <thead>
+                                <tr>
+                                  <th class="fw-bold">Sno</th>
+                                  <th class="fw-bold">Name of Visitor</th>
+                                  <th class="fw-bold">Nationality</th>
+                                  <th class="fw-bold">
+                                    Passport No / Emirates No
+                                  </th>
+                                  <th class="fw-bold">Add / Remove</th>
+                                </tr>
+                              </thead>
+                              <tbody id="add_visitor_detail">
+                                <tr>
+                                  <td>1</td>
+                                  <td>
+                                    <input
+                                      type="text"
+                                      class="border form-control rounded rounded-2"
+                                      value="Henry Tom"
+                                      disabled
+                                    />
+                                  </td>
+
+                                  <td>
+                                    <input
+                                      type="text"
+                                      class="border form-control rounded rounded-2"
+                                      value="Indian"
+                                      disabled
+                                    />
+                                  </td>
+
+                                  <td>
+                                    <input
+                                      type="text"
+                                      class="border form-control rounded rounded-2"
+                                      value="*********"
+                                      disabled
+                                    />
+                                  </td>
+
+                                  <td class="">
+                                    <button
+                                      type="button"
+                                      class="border bg-white p-2 fs-5 add_btn"
+                                      onclick="addRows()"
+                                      disabled
+                                    >
+                                      <i class="fa fa-plus"></i>
+                                    </button>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="form-pad box-shadow border rounded rounded-3 p-4 mt-4"
+                      >
+                        <h3
+                          class="page-title"
+                          style="
+                            font-weight: 600;
+                            color: black;
+                            padding-bottom: 20px;
+                          "
+                        >
+                          <span
+                            class="page-title-icon text-white mr-2"
+                            style="
+                              background: #e22d2c !important;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i class="mdi mdi-briefcase"></i>
+                          </span>
+                          SUPPORT DOCUMENTS
+                        </h3>
+
+                        <div class="row">
+                          <div class="col-lg-3">
+                            <a
+                              href="images/preview_noc.png"
+                              target="_blank"
+                              class="text-muted text-decoration-none"
+                            >
+                              <div class="form-group">
+                                <div class="input-group col-xs-12">
+                                  <div
+                                    class="d-flex border w-100 p-2 rounded align-items-center"
+                                  >
+                                    <i
+                                      class="fa-regular fa-file fs-1 text-secondary"
+                                    ></i>
+                                    <div class="ms-3 lh-1">
+                                      <p class="mb-0">Doc1.jpg</p>
+                                      <small class="text-muted"
+                                        >510.00 KB</small
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-lg-3">
+                            <a
+                              href="images/preview_noc.png"
+                              target="_blank"
+                              class="text-muted text-decoration-none"
+                            >
+                              <div class="form-group">
+                                <div class="input-group col-xs-12">
+                                  <div
+                                    class="d-flex border w-100 p-2 rounded align-items-center"
+                                  >
+                                    <i
+                                      class="fa-regular fa-file fs-1 text-secondary"
+                                    ></i>
+                                    <div class="ms-3 lh-1">
+                                      <p class="mb-0">Doc2.jpg</p>
+                                      <small class="text-muted"
+                                        >510.00 KB</small
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-lg-3">
+                            <a
+                              href="images/preview_noc.png"
+                              target="_blank"
+                              class="text-muted text-decoration-none"
+                            >
+                              <div class="form-group">
+                                <div class="input-group col-xs-12">
+                                  <div
+                                    class="d-flex border w-100 p-2 rounded align-items-center"
+                                  >
+                                    <i
+                                      class="fa-regular fa-file fs-1 text-secondary"
+                                    ></i>
+                                    <div class="ms-3 lh-1">
+                                      <p class="mb-0">Doc2.jpg</p>
+                                      <small class="text-muted"
+                                        >510.00 KB</small
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-lg-3">
+                            <a
+                              href="images/preview_noc.png"
+                              target="_blank"
+                              class="text-muted text-decoration-none"
+                            >
+                              <div class="form-group">
+                                <div class="input-group col-xs-12">
+                                  <div
+                                    class="d-flex border w-100 p-2 rounded align-items-center"
+                                  >
+                                    <i
+                                      class="fa-regular fa-file fs-1 text-secondary"
+                                    ></i>
+                                    <div class="ms-3 lh-1">
+                                      <p class="mb-0">Doc2.jpg</p>
+                                      <small class="text-muted"
+                                        >510.00 KB</small
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mt-4">
+                        <div class="text-center">
+                          <button
+                            type="button"
+                            class="btn btn-primary btn-fw clr"
+                            style="
+                              border: 1px solid #e22d2c;
+                              background: #e22d2c !important;
+                              color: #fff !important;
+                            "
+                            data-bs-toggle="modal"
+                            data-bs-target="#applyGatepass"
+                            id="assign"
+                          >
+                            Assign
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-primary btn-fw clr"
+                            style="
+                              border: 1px solid #2c81e2;
+                              background: #2c81e2 !important;
+                              color: #fff !important;
+                            "
+                            data-bs-toggle="modal"
+                            data-bs-target="#approveGp"
+                            id="assign"
+                          >
+                            Approve / Reject
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-secondary btn-fw clr"
+                            data-bs-toggle="modal"
+                            data-bs-target="#cancelGatepass"
+                          >
+                            Cancel
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:partials/_footer.html -->
+
+          <!-- partial -->
+        </div>
+
+        <!-- main-panel ends -->
+      </div>
+    </div>
+
+    <!-- Button trigger modal -->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="applyGatepass"
+      tabindex="-1"
+      aria-labelledby="applyGatepassLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="applyGatepassLabel">
+              Assign gatepass request to
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="">
+              <div class="d-flex col-12 justify-content-between text-start">
+                <div class="col-4">
+                  <label for="" class="fw-bold">IFFCO BU</label>
+                </div>
+                <div class="col-8">
+                  <select name="" id="business_unit" class="form-select">
+                    <option value="Corporate Divisions - Oils & Fats"
+                      >Corporate Divisions - Oils & Fats</option
+                    >
+                    <option value="Shama Food Industries LLC"
+                      >Shama Food Industries LLC</option
+                    >
+                    <option value="Intergulf Transportation Services LLC"
+                      >Intergulf Transportation Services LLC</option
+                    >
+                    <option value="Emirates Refining Co Ltd"
+                      >Emirates Refining Co Ltd</option
+                    >
+                    <option value="Tiffany Foods Ltd">Tiffany Foods Ltd</option>
+                  </select>
+                </div>
+              </div>
+              <div
+                class="d-flex col-12 justify-content-between text-start mt-2"
+              >
+                <div class="col-4">
+                  <label for="" class="fw-bold">Department</label>
+                </div>
+                <div class="col-8">
+                  <select name="" id="" class="form-select">
+                    <option value="">Select Department</option>
+                    <option value="">GAD Department</option>
+                    <option value="">IT</option>
+                    <option value="">Finance</option>
+                    <option value="">Visa Management</option>
+                  </select>
+                </div>
+              </div>
+              <div
+                class="d-flex col-12 justify-content-between text-start mt-2"
+              >
+                <div class="col-4">
+                  <label for="" class="fw-bold">HR / Authority</label>
+                </div>
+                <div class="col-8">
+                  <select name="" id="" class="form-select">
+                    <option value="">Select HR / Authority</option>
+                    <option value="">Ibrahim</option>
+                    <option value="">Rahim</option>
+                    <option value="">Rahman</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+            <a
+              href="#"
+              class="btn btn-danger"
+              id="assignBtn"
+              onclick="assignGp()"
+              >Assign</a
+            >
+            <a
+              href="#"
+              class="btn btn-danger d-none"
+              id="successModal"
+              data-bs-toggle="modal"
+              data-bs-target="#assignSuccess"
+              >modal</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="approveGp"
+      tabindex="-1"
+      aria-labelledby="approveGpLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="approveGpLabel">
+              Assign gatepass request to
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="w-100">
+              <div class="col-12 text-start mb-3">
+                <div>
+                  <label for="" class="fw-semibold">Select Status</label>
+                </div>
+                <div class="">
+                  <input
+                    type="radio"
+                    name="status_select"
+                    id="approved"
+                    value="1"
+                    onchange="statusType(this)"
+                  />
+                  <label for="approved">Approve</label>
+                  <input
+                    type="radio"
+                    name="status_select"
+                    class="ms-3"
+                    id="rejected"
+                    value="2"
+                    onchange="statusType(this)"
+                  />
+                  <label for="rejected">Reject</label>
+                </div>
+              </div>
+              <div
+                class="form-pad text-start rounded rounded-3 d-none"
+                id="acceptance"
+              >
+                <div class="row">
+                  <div class="col-12">
+                    <div class="">
+                      <div class="form-group">
+                        <label
+                          for="exampleInputUsername1"
+                          id="gatepass_date"
+                          class="fw-semibold"
+                          >To Port Authority</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="exampleInputUsername1"
+                        />
+                      </div>
+                    </div>
+                    <div class="">
+                      <div class="form-group">
+                        <label for="exampleInputUsername1" class="fw-semibold"
+                          >Subject</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="exampleInputUsername1"
+                          placeholder="Please Enter Subject"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <label for="exampleInputUsername1" class="fw-semibold"
+                        >Reason for NOC</label
+                      >
+                      <textarea id="noc_textbox"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="form-pad text-start rounded rounded-3 d-none"
+                id="rejection"
+              >
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <label for="exampleInputUsername1" class="fw-semibold"
+                        >Reason for Rejection</label
+                      >
+                      <textarea id="reject_textbox"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+            <a href="#" class="btn btn-danger" onclick="mailHandler()"
+              >Submit</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="cancelGatepass"
+      tabindex="-1"
+      aria-labelledby="cancelGatepassLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="cancelGatepassLabel">Cancelled</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="">
+              <p>This gatepass has been cancelled successfully!</p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+            <a
+              href="gad/gatepass/hr/dashboard/visitor-noc-history.html"
+              class="btn btn-danger"
+              >Ok</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="assignSuccess"
+      tabindex="-1"
+      aria-labelledby="assignSuccessLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="assignSuccessLabel">Success</h1>
+            <a
+              href="gad/gatepass/hr/dashboard/visitor-noc-history.html"
+              class="btn-close"
+            ></a>
+          </div>
+          <div class="modal-body">
+            <div class="">
+              <p>
+                An email for application no <b>GP-000123</b> has sent to
+                <code id="busi_unit"></code> for approval / rejection.
+              </p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+            <a
+              href="gad/gatepass/hr/dashboard/visitor-noc-history.html"
+              class="btn btn-danger"
+              >Ok</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+
+    <script>
+      // ck editor
+      ClassicEditor.create(document.querySelector("#noc_textbox")).catch(
+        (error) => {
+          console.error(error);
+        }
+      );
+      ClassicEditor.create(document.querySelector("#reject_textbox")).catch(
+        (error) => {
+          console.error(error);
+        }
+      );
+
+      function uploadFile() {
+        document.getElementById("file-input").click();
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        var notificationDropdown = document.getElementById(
+          "notificationDropdown"
+        );
+        var notificationMenu = document.querySelector(
+          ".navbar-dropdown.preview-list"
+        );
+
+        notificationDropdown.addEventListener("click", function (e) {
+          e.preventDefault();
+          if (notificationMenu.classList.contains("show")) {
+            notificationMenu.classList.remove("show");
+          } else {
+            notificationMenu.classList.add("show");
+          }
+        });
+
+        // Close the notification dropdown when clicking outside of it
+        document.addEventListener("click", function (e) {
+          if (
+            !notificationDropdown.contains(e.target) &&
+            !notificationMenu.contains(e.target)
+          ) {
+            notificationMenu.classList.remove("show");
+          }
+        });
+      });
+    </script>
+    <script src="gad/gatepass/hr/dashboard/assets/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="gad/gatepass/hr/dashboard/assets/js/off-canvas.js"></script>
+    <script src="gad/gatepass/hr/dashboard/assets/js/hoverable-collapse.js"></script>
+    <script src="gad/gatepass/hr/dashboard/assets/js/misc.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <!-- End custom js for this page -->
+    <script>
+      emailjs.init("0kipjpN1wpYdzq_Jc");
+
+      function mailHandler() {
+        let email = document.getElementById("email").value;
+        let visit_name = document.getElementById("visit_name").value;
+        let status_val = document.querySelector(
+          'input[name="status_select"]:checked'
+        ).value;
+        if (status_val == 1) {
+          let status = " Accepted";
+          const subject = "Gate Pass Application ";
+          let msg =
+            `Dear ` +
+            visit_name +
+            `,\n
+        I'm pleased to inform you that your gate pass application has been ` +
+            status +
+            `.\n
+        Best regards,\n
+        IFFCO`;
+
+          const message = msg;
+          const toEmail = email;
+
+          const name = status;
+          emailjs
+            .send("service_yiyyvkp", "template_jf7jdni", {
+              to_email: toEmail,
+              subject: subject,
+              message: message,
+              from_name: name,
+            })
+            .then(
+              function (response) {
+                console.log("Email sent successfully:", response);
+                location.href =
+                  "gad/gatepass/hr/dashboard/visitor-noc-history.html";
+                // alert("Email sent successfully!");
+              },
+              function (error) {
+                console.error("Email sending failed:", error);
+                location.href =
+                  "gad/gatepass/hr/dashboard/visitor-noc-history.html";
+                // alert("Email sending failed. Please try again later.");
+              }
+            );
+        } else {
+          let status = " Rejected";
+          const subject = "Rejection of Gate Pass Request";
+          let msg =
+            `\n
+        Dear ` +
+            visit_name +
+            `,\n
+        We regret to inform you that your gate pass request has been declined. We have reviewed your application, and unfortunately, we are unable to approve it at this time.\n
+        If you have any questions or require further information regarding this decision, please feel free to reach out to our gate pass department.\n
+        Thank you for your understanding.\n
+        Best regards,\n
+        IFFCO`;
+
+          const message = msg;
+          const toEmail = email;
+
+          const name = status;
+          emailjs
+            .send("service_yiyyvkp", "template_jf7jdni", {
+              to_email: toEmail,
+              subject: subject,
+              message: message,
+              from_name: name,
+            })
+            .then(
+              function (response) {
+                console.log("Email sent successfully:", response);
+                location.href =
+                  "gad/gatepass/hr/dashboard/visitor-noc-history.html";
+                // alert("Email sent successfully!");
+              },
+              function (error) {
+                console.error("Email sending failed:", error);
+                location.href =
+                  "gad/gatepass/hr/dashboard/visitor-noc-history.html";
+                // alert("Email sending failed. Please try again later.");
+              }
+            );
+        }
+      }
+
+      function assignGp() {
+        let email = document.getElementById("email").value;
+        let visit_name = document.getElementById("visit_name").value;
+        let purpose_of_visit = document.getElementById("purpose_of_visit")
+          .value;
+        let gatepass_date = document.getElementById("gatepass_date").value;
+
+        let business_unit = document.getElementById("business_unit").value;
+        document.getElementById("busi_unit").innerText = business_unit;
+
+        const toEmail = email;
+        const subject = "Gate Pass Application";
+        const message =
+          `Hi ` +
+          visit_name +
+          `,\n
+      You have received an application for approval / rejection.\n
+      Application No : GP-000123\n
+      Name \ Company :` +
+          visit_name +
+          `\n
+      purpose of visit :` +
+          purpose_of_visit +
+          `\n
+      Date :` +
+          gatepass_date +
+          `\n
+      `;
+        const name = "";
+        const mylink = "Click here to visit the portal";
+        emailjs
+          .send("service_yiyyvkp", "template_jf7jdni", {
+            to_email: toEmail,
+            subject: subject,
+            message: message,
+            from_name: name,
+            my_link: mylink,
+          })
+          .then(
+            function (response) {
+              console.log("Email sent successfully:", response);
+              document.getElementById("successModal").click();
+              // alert("Email sent successfully!");
+            },
+            function (error) {
+              console.error("Email sending failed:", error);
+              document.getElementById("successModal").click();
+              // alert("Email sending failed. Please try again later.");
+            }
+          );
+      }
+
+      // Logout fOR Pop
+      // let add_btn = document.querySelectorAll('.add_btn');
+      // let delete_btn = document.querySelector('.delete_btn');
+      function addRows() {
+        var table = document.getElementById("visitTable"); //to get the row count
+        var tbodyRowCount = table.tBodies[0].rows.length + 1; //to get the row count
+        var rows = document.createElement("tr");
+        rows.innerHTML =
+          `
+          <td>` +
+          tbodyRowCount +
+          `</td>
+          <td><input type="text" class="border border-secondary p-2 rounded rounded-2"></td>
+          <td><input type="text" class="border border-secondary p-2 rounded rounded-2"></td>
+          <td><input type="text" class="border border-secondary p-2 rounded rounded-2"></td>
+          <td class="">
+            <button type="button" class="border bg-white p-2 fs-5 add_btn" onclick="addRows()"><i
+                class="fa fa-plus"></i></button>
+            <button type="button" class="border bg-white p-2 fs-5 delete_btn text-danger" onclick="removeRows(this)"><i class="fa-regular fa-trash-can"></i></button>
+          </td>
+        `;
+        document.getElementById("add_visitor_detail").appendChild(rows);
+      }
+
+      function removeRows(e) {
+        var i = e.parentNode.parentNode.rowIndex;
+        document.getElementById("visitTable").deleteRow(i);
+      }
+
+      function statusType(e) {
+        // document.getElementById('assign').innerText ="Submit"
+
+        if (e.value == 2) {
+          document.getElementById("rejection").classList.remove("d-none");
+          document.getElementById("acceptance").classList.add("d-none");
+        } else {
+          document.getElementById("acceptance").classList.remove("d-none");
+          document.getElementById("rejection").classList.add("d-none");
+        }
+      }
+    </script>
+  </body>
+</html>

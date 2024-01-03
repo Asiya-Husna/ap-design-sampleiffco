@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+  <link rel="stylesheet" href="../../global.css" />
+  <link rel="stylesheet" href="./view-employess.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" />
+  <title>Employee-view</title>
+</head>
+
+<body>
+  <div class="dashboard-1">
+    <div class="side-menu">
+      <div class="company-logo-div">
+        <img class="rectangle-icon" alt="company-Logo" src="../../images/Iffco.png" />
+      </div>
+
+      <div class="sidebar-list-item">
+        <a class="list-menu">
+          <div class="list-image-view">
+            <img class="icon-24-outline-key-squa" alt="" src="../../images/key-square.png" />
+          </div>
+
+          <div class="dashboard list-content">Dashboard</div>
+        </a>
+
+        <a class="list-menu side-menu-inner" id="groupContainer">
+          <div class="list-image-view">
+            <img class="icon-24-outline-key-squa" alt="" src="../../images/user-square 1.png" />
+          </div>
+
+          <div class="employees list-content">Employees</div>
+          <div class="list-image-view">
+            <img class="chevron-right-2-icon" alt="" src="../../images/chevron-right-arrow.png" />
+          </div>
+        </a>
+        <a class="list-menu" id="listMenuContainer1">
+          <div class="list-image-view">
+            <img class="icon-24-outline-key-squa" alt="" src="../../images/cil_room.png" />
+          </div>
+
+          <div class="employees list-content">Rooms</div>
+          <div class="list-image-view">
+            <img class="chevron-right-2-icon" alt="" src="../../images/right-arrow-black.png" />
+          </div>
+        </a>
+        <a class="list-menu">
+          <div class="list-image-view">
+            <img class="icon-24-outline-key-squa" alt="" src="../../images/wallet-money 2.png" />
+          </div>
+
+          <div class="employees list-content">Payments</div>
+          <div class="list-image-view">
+            <img class="chevron-right-2-icon" alt="" src="../../images/right-arrow-black.png" />
+          </div>
+        </a>
+        <a class="list-menu" id="listMenuContainer3">
+          <div class="list-image-view">
+            <img class="icon-24-outline-key-squa" alt="" src="../../images/solar_document-linear.png" />
+          </div>
+
+          <div class="employees list-content">Legal Documents</div>
+          <div class="list-image-view">
+            <img class="chevron-right-2-icon" alt="" src="../../images/right-arrow-black.png" />
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div class="header-page">
+        <div class="rectangle-container">
+          <a class="location-btn header-btn">
+            Location
+            <img class="chevron-right-2-icon4" alt="" src="../../images/chevron-right 2.png" />
+          </a>
+        </div>
+        <div class="rectangle-container ">
+
+          <a class="logout-btn header-btn"><img class="solarlogout-bold-icon" alt=""
+              src="../../images/solar_logout-bold.png" />Logout
+
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Employee-view Employee -->
+      <main>
+        <div class="main-header">
+          <button class="active"> View Employess </button>
+          <button class="in-active">Update Employess</button>
+        </div>
+
+        <div class="main-body">
+
+          <div class="main-body-inputs">
+
+            <div class="input-container">
+              <label for="emp-id" class="input-label">Emp ID</label>
+              <input type="text" id="emp-id" class="inputs" placeholder="IFF501"  >
+              <i><img src="../../images/emp-id.svg" class='input-img ' alt=""></i>
+            </div>
+
+            <div class="input-container">
+              <label for="emp-name" class="input-label">Emp Name</label>
+              <input type="text" id="emp-name" class="inputs" placeholder="Hameed">
+              <i><img src="../../images/emp-name.svg" class='input-img ' alt="emp-name"></i>
+            </div>  
+
+            <div class="input-container">
+              <label for="emp-contact" class="input-label">Emp contact</label>
+              <input type="text" id="emp-contact" class="inputs" placeholder="050616765">
+              <i><img src="../../images/emp-phone.svg" class='input-img ' alt="emp-name"></i>
+            </div>
+
+            <div class="input-container">
+              <label for="room-number" class="input-label">Room Number</label>
+              <input type="text" id="room-number" class="inputs" placeholder="2A">
+              <i><img src="../../images/room-number.svg" class='input-img ' alt="emp-name"></i>
+            </div>
+
+            <div class="input-container" >
+              <label for="status-dd" class="input-label">Status</label>
+              <div style="display: flex;justify-content: start;gap:10px;align-items: center;">
+                <i style="display: inline-block;"><img src="../../images/status.svg"  alt="emp-name"></i>
+                <select name="status" id="status-dd"   >
+                  <option value="Occupied">Occupied</option>
+                  <option value="Occupied">Occupied</option>
+                  <option value="Occupiede">Occupied</option>
+                  <option value="Occupied">Occupied</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="input-container">
+              <label for="" class="input-label">Duration</label>
+              <div class="duration-container">
+
+                <div class="duration-from">
+                    <label for="" class="duration-label">From    </label>
+                    <select name="from" id="duration-from"  class="duration-dropdown" >
+                      <option value="from">Sep 06-2023</option>
+                      <option value="from">Sep 07-2023</option>
+                      <option value="from">Sep 08-2023</option>
+                      <option value="from">Sep 09-2023</option>
+                    </select>
+
+                </div>
+                <div class="duration-to">
+                    <label for="" class="duration-label">To    </label>
+                    <select name="from" id="duration-from"  class="duration-dropdown" >
+                      <option value="from">Oct 06-2023</option>
+                      <option value="from">Oct 07-2023</option>
+                      <option value="from">Oct 08-2023</option>
+                      <option value="from">Oct 09-2023</option>
+                    </select>
+                </div>
+                
+              </div>
+            </div>
+
+            
+          </div>
+          <div class="main-body-photo">
+            <img src="../../images/user-img.svg" alt="">
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
